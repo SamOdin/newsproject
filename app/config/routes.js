@@ -22,6 +22,19 @@ function initStates($stateProvider, $ocLazyLoadProvider) {
             }
         })
 
+            .state('landing.Catalog', {
+                url: '/catalog',
+                templateUrl: '/app/modules/landing/views/landingCatalog.html'
+            })
+            .state('landing.Page', {
+                url: '/catalog',
+                templateUrl: '/app/modules/landing/views/landingPage.html'
+            })
+            .state('landing.Article', {
+                url: '/catalog',
+                templateUrl: '/app/modules/landing/views/landingArticle.html'
+            })
+
 
 
     function resolveModule(moduleName) {
