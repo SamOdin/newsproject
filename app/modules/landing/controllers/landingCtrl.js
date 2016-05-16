@@ -12,9 +12,11 @@
                         var randomNumber = (Math.floor(Math.random() * (responce.length - (responce.length / 2)) + (responce.length / 2)));
                         $scope.randomArticles.push(responce[randomNumber]);
                     }
+
+                    console.log($scope.randomArticles);
                 });
 
-                console.log($scope.randomArticles)
+
 
             }
 
