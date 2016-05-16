@@ -9,6 +9,11 @@ function initModules($ocLazyLoadProvider) {
                 files: ['/app/modules/index/controllers/indexCtrl.js']
             },
 
+            {
+                name: 'landingCtrl',
+                files: ['/app/modules/landing/controllers/landingCtrl.js']
+            },
+
             /*Providers*/
 
             {

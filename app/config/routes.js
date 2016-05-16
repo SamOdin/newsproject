@@ -16,8 +16,9 @@ function initStates($stateProvider, $ocLazyLoadProvider) {
             parent: 'index',
             views: {
                 'landing': {
+                    controller: 'landingCtrl',
                     templateUrl: '/app/modules/landing/views/landing.html',
-                    resolve: resolveModule([])
+                    resolve: resolveModule(['landingCtrl'])
                 }
             }
         })
