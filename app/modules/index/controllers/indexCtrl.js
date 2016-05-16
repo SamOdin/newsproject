@@ -8,9 +8,7 @@
             $scope.header = '/app/modules/index/views/header.html';
             $scope.footer = 'app/modules/index/views/footer.html';
 
-            articlesProvider.getArticles().$promise.then(function (response) {
-                $scope.articles = response;
-            });
+            $scope.articles = articlesProvider.getArticles();
 
             catalogProvider.getCatalog().$promise.then(function (response) {
                 $scope.catalog = response;
