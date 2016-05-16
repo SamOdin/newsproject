@@ -1,36 +1,31 @@
-<!DOCTYPE html>
 <html data-ng-app="main">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <base href="/">
-    <title>News feed!</title>
-    <link href="/app/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/main.css">
-</head>
 
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <base href="/">
+        <title>News site - project</title>
+        <link href="/app/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
 
-<div data-ng-include="'/app/views/searchForm.html'"></div>
-<div data-ng-include="'/app/views/catalogForm.html'"></div>
-<div data-ng-include="'/app/views/randomForm.html'"></div>
-<div data-ng-include="'/app/views/contactForm.html'"></div>
+    </head>
 
-<script src="/app/vendors/angular/angular.min.js"></script>
-<script src="/app/vendors/angular-loading-bar/build/loading-bar.min.js"></script>
-<script src="/app/vendors/angular-mocks/angular-mocks.js"></script>
-<script src="/app/vendors/angular-resource/angular-resource.min.js"></script>
-<script src="/app/vendors/angular-sanitize/angular-sanitize.min.js"></script>
-<script src="/app/vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="/app/vendors/angular-ui-router-styles/ui-router-styles.js"></script>
-<script src="/app/vendors/jquery/dist/jquery.min.js"></script>
-<script src="/app/vendors/oclazyload/dist/ocLazyLoad.min.js"></script>
-<script src="/app/config/routes.js"></script>
-<script src="/app/core.js"></script>
-<script src="/app/vendors/bootstrap/js/bootstrap.min.js"
-</body>
+    <body>
+        <div data-ui-view="layout"></div>
+
+        <script src="/app/vendors/angular/angular.min.js"></script>
+        <script src="/app/vendors/angular-resource/angular-resource.min.js"></script>
+        <script src="/app/vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="/app/vendors/angular-ui-router-styles/ui-router-styles.js"></script>
+        <script src="/app/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/app/vendors/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+        <script src="/app/core.js"></script>
+        <script src="/app/config/routes.js"></script>
+        <script src="/app/config/modules.js"></script>
+    </body>
 
 </html>
