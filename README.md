@@ -1,0 +1,2 @@
+# newsproject
+AngularJS test project
